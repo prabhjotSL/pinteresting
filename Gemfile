@@ -10,6 +10,9 @@ gem 'sass-rails', '~> 4.0.0'
 # Use Bootstrap for styling and Basic Interactions
 gem 'bootstrap-sass'
 
+# Devise to handle the sign up and login for users
+gem 'devise', '~> 3.1.1'
+
 # Specific way to install a certain gem.
 # gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
@@ -35,6 +38,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+#Grouping to account for heroku not able to support sqlite3
 
 group :development, :test do
      gem 'sqlite3'
